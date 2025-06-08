@@ -1,0 +1,22 @@
+---
+name: array-utils
+description: Array manipulation utilities for mlld
+author: mlld-dev
+version: 1.0.0
+keywords: [array, list, utilities]
+license: MIT
+---
+
+# Array Utilities
+
+Useful array manipulation functions.
+
+@data first(arr) = {{arr.0}}
+
+@data last(arr) = {{arr.-1}}
+
+@exec join(arr, separator) = @run [echo "{{arr}}" | tr " " "{{separator}}"]
+
+@data length(arr) = {{arr.length}}
+
+@text forEach(arr, template) = foreach {{template}}({{arr}})
