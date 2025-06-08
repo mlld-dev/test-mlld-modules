@@ -1,0 +1,17 @@
+---
+name: color-utils
+description: Terminal color utilities for mlld output
+author: mlld-dev
+version: 1.0.0
+keywords: [color, terminal, ansi]
+---
+
+# Color Utilities
+
+ANSI color codes for terminal output.
+
+@text red(text) = [[[31m{{text}}[0m]]
+@text green(text) = [[[32m{{text}}[0m]]
+@text yellow(text) = [[[33m{{text}}[0m]]
+@text blue(text) = [[[34m{{text}}[0m]]
+@text bold(text) = [[[1m{{text}}[0m]]
