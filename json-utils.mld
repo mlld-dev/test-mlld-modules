@@ -1,0 +1,18 @@
+---
+name: json-utils
+description: JSON manipulation utilities for mlld
+author: mlld-dev
+version: 1.0.0
+keywords: [json, parse, stringify]
+license: MIT
+---
+
+# JSON Utilities
+
+Safe JSON parsing and stringification.
+
+@exec parseJSON(input) = @run [echo "{{input}}" | jq .]
+
+@exec stringify(data) = @run [echo "{{data}}" | jq -c .]
+
+@text prettyJSON(data) = @run [echo "{{data}}" | jq .]
